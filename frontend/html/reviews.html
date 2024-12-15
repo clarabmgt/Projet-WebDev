@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enclosure Reviews</title>
+    <link rel="stylesheet" href="../css/reviews.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reviews for Enclosure</h1>
+        </header>
+        <section id="reviewForm">
+            <h2>Leave a Review</h2>
+            <form id="addReview">
+                <label for="rating">Rating</label>
+                <select id="rating" required>
+                    <option value="" disabled selected>Choose a rating</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+
+                <label for="comment">Comment</label>
+                <textarea id="comment" rows="4" placeholder="Write your review..." required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+        <section id="reviewsList">
+            <h2>All Reviews</h2>
+            <!-- Reviews will load dynamically -->
+        </section>
+    </div>
+    <script src="../js/reviews.js"></script>
+</body>
+</html>

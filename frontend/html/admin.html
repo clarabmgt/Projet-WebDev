@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Panel</h1>
+        </header>
+        <section id="manageEnclosures">
+            <h2>Manage Enclosures</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Enclosure</th>
+                        <th>Status</th>
+                        <th>Feeding Time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lion Enclosure</td>
+                        <td>Open</td>
+                        <td>12:00 PM</td>
+                        <td>
+                            <button class="closeBtn">Close</button>
+                            <button class="updateTimeBtn">Update Feeding Time</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolf Enclosure</td>
+                        <td>Under Maintenance</td>
+                        <td>-</td>
+                        <td>
+                            <button class="openBtn">Reopen</button>
+                            <button class="updateTimeBtn">Update Feeding Time</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

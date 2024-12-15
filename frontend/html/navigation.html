@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Navigation</title>
+    <link rel="stylesheet" href="../css/navigation.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Park Navigation</h1>
+        </header>
+        <section id="map">
+            <img src="assets/park-map.jpg" alt="Park Map">
+        </section>
+        <section id="routeFinder">
+            <h2>Find Your Route</h2>
+            <form id="routeForm">
+                <label for="start">Start Point</label>
+                <select id="start" required>
+                    <option value="" disabled selected>Select a location</option>
+                    <option value="entrance">Entrance</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="enclosure1">Enclosure 1</option>
+                    <option value="enclosure2">Enclosure 2</option>
+                    <!-- Add more options dynamically -->
+                </select>
+
+                <label for="destination">Destination</label>
+                <select id="destination" required>
+                    <option value="" disabled selected>Select a location</option>
+                    <option value="entrance">Entrance</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="enclosure1">Enclosure 1</option>
+                    <option value="enclosure2">Enclosure 2</option>
+                    <!-- Add more options dynamically -->
+                </select>
+                <button type="submit">Get Route</button>
+            </form>
+            <div id="routeResult">
+                <!-- Display route instructions -->
+            </div>
+        </section>
+    </div>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>
